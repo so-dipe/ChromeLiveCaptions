@@ -11,9 +11,9 @@ chrome.runtime.onMessage.addListener(async (message) => {
             },
             video: false
         });
-    };
 
-    const output = new AudioContext();
-    const source = output.createMediaStreamSource(media);
-    source.connect(output.destination);
+        const output = new AudioContext();
+        const source = output.createMediaStreamSource(media);
+        source.connect(output.destination);
+    }
 });
